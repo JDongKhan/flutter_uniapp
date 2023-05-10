@@ -18,6 +18,11 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+//            dirs project(':flutter_uniapp').file('libs')
+            //解决android  子module引用aar
+            dirs '../flutter_uniapp/libs','libs'
+        }
     }
 }
 
@@ -42,6 +47,9 @@ android {
 
     defaultConfig {
         minSdkVersion 21
+    }
+    lintOptions {
+        disable 'InvalidPackage'
     }
 }
 
