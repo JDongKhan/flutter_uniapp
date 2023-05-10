@@ -18,14 +18,30 @@ app项目需要拷贝assets下的所有资源（如果不需要本地部署，�
 
 ### app项目配置
 
-app项目的build需要配置
+app项目的build.gradle需要配置
 ```groovy
-  //此处配置必须添加 否则无法正确运行  
-    aaptOptions {  
-        additionalParameters '--auto-add-overlay'  
-        //noCompress 'foo', 'bar'  
-        ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"  
+
+
+def mfph = [
+      //包名
+      "apk.applicationId" : "替换成自己应用 ID",
+]
+android: {
+  defaultConfig {
+    minSdkVersion 21
+    multiDexEnabled true
+    manifestPlaceholders = mfph
+    ndk {
+        //选择要添加的对应 cpu 类型的 .so 库。
+        abiFilters 'x86','armeabi-v7a',"arm64-v8a" //不支持armeabi
     }
+  }
+  aaptOptions {
+      additionalParameters '--auto-add-overlay'
+      ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
+  }  
+}	
+ 
     
 ```
 
