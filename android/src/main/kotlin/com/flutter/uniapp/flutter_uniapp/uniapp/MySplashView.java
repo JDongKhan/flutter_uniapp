@@ -30,7 +30,8 @@ public class MySplashView implements IDCUniMPAppSplashView {
 
     @Override
     public void onCloseSplash(ViewGroup rootView) {
-        if(rootView != null)
+        if(rootView != null) {
             rootView.removeView(splashView);
+        }
     }
 }

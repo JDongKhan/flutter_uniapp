@@ -22,7 +22,7 @@ class FlutterUniappWeb extends FlutterUniappPlatform {
   }
 
   @override
-  Future<bool?> openMini({String? remoteUrl, String? path}) {
+  Future<bool?> openMini({String? remoteUrl, String? password, String? path}) {
     throw UnimplementedError('openMini() has not been implemented.');
   }
 }

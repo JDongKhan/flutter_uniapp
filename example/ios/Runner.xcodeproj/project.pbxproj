@@ -13,6 +13,15 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		B39610342A0B6C6500E8C0D4 /* __UNI__11E9B73.wgt in Resources */ = {isa = PBXBuildFile; fileRef = B39610322A0B6C6500E8C0D4 /* __UNI__11E9B73.wgt */; };
+		B39610352A0B6C6500E8C0D4 /* __UNI__CBDCE04.wgt in Resources */ = {isa = PBXBuildFile; fileRef = B39610332A0B6C6500E8C0D4 /* __UNI__CBDCE04.wgt */; };
+		B39610512A0B7AAD00E8C0D4 /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = B396104A2A0B7AAD00E8C0D4 /* __uniappes6.js */; };
+		B39610522A0B7AAD00E8C0D4 /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = B396104B2A0B7AAD00E8C0D4 /* uni-jsframework.js */; };
+		B39610532A0B7AAD00E8C0D4 /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B396104C2A0B7AAD00E8C0D4 /* PandoraApi.bundle */; };
+		B39610542A0B7AAD00E8C0D4 /* uni-jsframework-vue3.js in Resources */ = {isa = PBXBuildFile; fileRef = B396104D2A0B7AAD00E8C0D4 /* uni-jsframework-vue3.js */; };
+		B39610552A0B7AAD00E8C0D4 /* unincomponents.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B396104E2A0B7AAD00E8C0D4 /* unincomponents.ttf */; };
+		B39610562A0B7AAD00E8C0D4 /* weex-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = B396104F2A0B7AAD00E8C0D4 /* weex-polyfill.js */; };
+		B39610572A0B7AAD00E8C0D4 /* weexUniJs.js in Resources */ = {isa = PBXBuildFile; fileRef = B39610502A0B7AAD00E8C0D4 /* weexUniJs.js */; };
 		E49480028E563F58E1A5A4DE /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67D5D2A9A502E05E7C0D4C9 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +55,15 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39610322A0B6C6500E8C0D4 /* __UNI__11E9B73.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__11E9B73.wgt; sourceTree = "<group>"; };
+		B39610332A0B6C6500E8C0D4 /* __UNI__CBDCE04.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__CBDCE04.wgt; sourceTree = "<group>"; };
+		B396104A2A0B7AAD00E8C0D4 /* __uniappes6.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = __uniappes6.js; sourceTree = "<group>"; };
+		B396104B2A0B7AAD00E8C0D4 /* uni-jsframework.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework.js"; sourceTree = "<group>"; };
+		B396104C2A0B7AAD00E8C0D4 /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
+		B396104D2A0B7AAD00E8C0D4 /* uni-jsframework-vue3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework-vue3.js"; sourceTree = "<group>"; };
+		B396104E2A0B7AAD00E8C0D4 /* unincomponents.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unincomponents.ttf; sourceTree = "<group>"; };
+		B396104F2A0B7AAD00E8C0D4 /* weex-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "weex-polyfill.js"; sourceTree = "<group>"; };
+		B39610502A0B7AAD00E8C0D4 /* weexUniJs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
 		F67D5D2A9A502E05E7C0D4C9 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,7 +94,6 @@
 				2556B6C320211C9942992CCD /* Pods-Runner.release.xcconfig */,
 				097F9838639CE1A80513AA80 /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +130,8 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				B39610492A0B7AAD00E8C0D4 /* Resources */,
+				B39610312A0B6C6500E8C0D4 /* Apps */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -123,6 +142,30 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		B39610312A0B6C6500E8C0D4 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				B39610322A0B6C6500E8C0D4 /* __UNI__11E9B73.wgt */,
+				B39610332A0B6C6500E8C0D4 /* __UNI__CBDCE04.wgt */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		B39610492A0B7AAD00E8C0D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B396104A2A0B7AAD00E8C0D4 /* __uniappes6.js */,
+				B396104B2A0B7AAD00E8C0D4 /* uni-jsframework.js */,
+				B396104C2A0B7AAD00E8C0D4 /* PandoraApi.bundle */,
+				B396104D2A0B7AAD00E8C0D4 /* uni-jsframework-vue3.js */,
+				B396104E2A0B7AAD00E8C0D4 /* unincomponents.ttf */,
+				B396104F2A0B7AAD00E8C0D4 /* weex-polyfill.js */,
+				B39610502A0B7AAD00E8C0D4 /* weexUniJs.js */,
+			);
+			name = Resources;
+			path = ../../../ios/Core/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +182,7 @@
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
-				19D6EE8696E56CE506447E5E /* [CP] Embed Pods Frameworks */,
+				B6521CA8085CB185AB2C5F51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,31 +233,23 @@
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				B39610552A0B7AAD00E8C0D4 /* unincomponents.ttf in Resources */,
+				B39610512A0B7AAD00E8C0D4 /* __uniappes6.js in Resources */,
+				B39610562A0B7AAD00E8C0D4 /* weex-polyfill.js in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				B39610572A0B7AAD00E8C0D4 /* weexUniJs.js in Resources */,
+				B39610522A0B7AAD00E8C0D4 /* uni-jsframework.js in Resources */,
+				B39610542A0B7AAD00E8C0D4 /* uni-jsframework-vue3.js in Resources */,
+				B39610532A0B7AAD00E8C0D4 /* PandoraApi.bundle in Resources */,
+				B39610352A0B6C6500E8C0D4 /* __UNI__CBDCE04.wgt in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				B39610342A0B6C6500E8C0D4 /* __UNI__11E9B73.wgt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19D6EE8696E56CE506447E5E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -244,6 +279,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+		};
+		B6521CA8085CB185AB2C5F51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD6085D96A318BF9777D9EFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

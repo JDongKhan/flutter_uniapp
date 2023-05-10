@@ -5,8 +5,9 @@ class FlutterUniapp {
     return FlutterUniappPlatform.instance.initSDK();
   }
 
-  static Future<bool?> openMini({String? remoteUrl, String? path}) {
+  static Future<bool?> openMini(
+      {String? remoteUrl, String? password, String? path}) {
     return FlutterUniappPlatform.instance
-        .openMini(remoteUrl: remoteUrl, path: path);
+        .openMini(remoteUrl: remoteUrl, password: password, path: path);
   }
 }

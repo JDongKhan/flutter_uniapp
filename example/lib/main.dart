@@ -40,6 +40,7 @@ class _MyAppState extends State<MyApp> {
               FlutterUniapp.openMini(
                   remoteUrl:
                       'https://native-res.dcloud.net.cn/unimp-sdk/__UNI__7AEA00D.wgt',
+                  password: '789456123',
                   path: '');
             },
           ),

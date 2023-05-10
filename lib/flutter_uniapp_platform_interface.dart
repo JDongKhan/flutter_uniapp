@@ -27,7 +27,7 @@ abstract class FlutterUniappPlatform extends PlatformInterface {
     throw UnimplementedError('initSDK() has not been implemented.');
   }
 
-  Future<bool?> openMini({String? remoteUrl, String? path}) {
+  Future<bool?> openMini({String? remoteUrl, String? password, String? path}) {
     throw UnimplementedError('openMini() has not been implemented.');
   }
 }

@@ -2,7 +2,7 @@ package com.flutter.uniapp.flutter_uniapp
 
 import android.content.Context
 import androidx.annotation.NonNull
-import com.flutter.uniapp.flutter_uniapp.uniapp.UniAppSDK
+import com.flutter.uniapp.flutter_uniapp.uniapp.UniAppManager
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -27,16 +27,17 @@ class FlutterUniappPlugin: FlutterPlugin, MethodCallHandler {
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "initSDK") {
-      UniAppSDK.initSDK(context)
+      UniAppManager.initSDK(context)
       result.success(true)
     } else if  (call.method == "openMini") {
       val param = call.arguments as Map<*, *>
       val remoteUrl = param["remoteUrl"]?.toString()
       val path = param["path"]?.toString()
-      if (remoteUrl != null && remoteUrl.isEmpty()) {
-        UniAppSDK.openRemoteMini(context, remoteUrl, path)
+      val password = param["password"]?.toString()
+      if (remoteUrl != null && remoteUrl.isNotEmpty()) {
+        UniAppManager.openRemoteMini(context, remoteUrl, password,path)
       } else {
-        UniAppSDK.openMini(context,path)
+        UniAppManager.openMini(context,path)
       }
       result.success(true)
     } else {

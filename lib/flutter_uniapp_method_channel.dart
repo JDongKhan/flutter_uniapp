@@ -23,9 +23,11 @@ class MethodChannelFlutterUniapp extends FlutterUniappPlatform {
   }
 
   @override
-  Future<bool?> openMini({String? remoteUrl, String? path}) async {
+  Future<bool?> openMini(
+      {String? remoteUrl, String? password, String? path}) async {
     final result = await methodChannel.invokeMethod<bool>('openMini', {
       'remoteUrl': remoteUrl,
+      'password': password,
       'path': path,
     });
     return result;

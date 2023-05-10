@@ -1,7 +1,6 @@
 package com.flutter.uniapp.flutter_uniapp.uniapp.util;
 
 import android.content.Context;
-import android.os.Environment;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -50,10 +49,17 @@ public class DownloadUtil {
         // Request request = new Request.Builder().header("token",sp.getString("token" , "")).url(url).build();
 
         Request request = new Request.Builder().url(url).build();
-
+        // 储存下载文件的目录
+        File file = new File(saveDir, getNameFromUrl(fileName));
+        if (isExistDir(saveDir) && file.exists()){
+            listener.onDownloadSuccess(file);
+            return;
+        }
         okHttpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
+                Log.w(TAG,"下载失败："+e.getMessage());
+                e.printStackTrace();
                 // 下载失败
                 listener.onDownloadFailed();
             }
@@ -63,13 +69,11 @@ public class DownloadUtil {
                 byte[] buf = new byte[2048];
                 int len = 0;
                 FileOutputStream fos = null;
-                // 储存下载文件的目录
-                String savePath = isExistDir(saveDir);
-                Log.w(TAG,"存储下载目录："+savePath);
+                Log.w(TAG,"存储下载目录："+saveDir);
                 try {
                     is = response.body().byteStream();
                     long total = response.body().contentLength();
-                    File file = new File(savePath, getNameFromUrl(fileName));
+                    File file = new File(saveDir, getNameFromUrl(fileName));
                     Log.w(TAG,"最终路径："+file);
                     fos = new FileOutputStream(file);
                     long sum = 0;
@@ -109,16 +113,15 @@ public class DownloadUtil {
      * @throws IOException
      * 判断下载目录是否存在
      */
-    private String isExistDir(String saveDir) throws IOException {
+    private boolean isExistDir(String saveDir) {
         // 下载位置
         File downloadFile = new File(saveDir);
-        if (!downloadFile.mkdirs()) {
-            Log.i(TAG,"创建目录:"+downloadFile.getAbsolutePath());
-            downloadFile.createNewFile();
+        if (downloadFile.exists()) {
+           return true;
         }
-        String savePath = downloadFile.getAbsolutePath();
-        Log.w(TAG,"下载目录："+savePath);
-        return savePath;
+        downloadFile.mkdirs();
+        Log.w(TAG,"下载目录："+saveDir);
+        return true;
     }
 
     /**
