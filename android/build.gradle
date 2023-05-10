@@ -18,11 +18,11 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        flatDir {
-//            dirs project(':flutter_uniapp').file('libs')
-            //解决android  子module引用aar
-            dirs '../flutter_uniapp/libs','libs'
-        }
+//        flatDir {
+////            dirs project(':flutter_uniapp').file('libs')
+//            //解决android  子module引用aar
+//            dirs '../flutter_uniapp/libs','libs'
+//        }
     }
 }
 
@@ -63,7 +63,8 @@ repositories {
 dependencies {
     //导入SDK相关依赖jar、aar
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    compileOnly fileTree(include: ['*.aar'], dir: 'libs')
+
 
     //必须添加的依赖
     implementation "androidx.recyclerview:recyclerview:1.0.0"

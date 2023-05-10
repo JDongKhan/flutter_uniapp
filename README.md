@@ -40,10 +40,14 @@ android: {
       additionalParameters '--auto-add-overlay'
       ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
   }  
-}	
- 
+}
+
+依赖
+implementation fileTree(include: ['*.aar'], dir:  rootDir.absolutePath + '../../../android/libs')
     
 ```
+
+
 
 ## iOS
 
@@ -53,7 +57,13 @@ android: {
 
 
 ```
-__uniappes6.jsPandoraApi.bundleuni-jsframework-vue3.jsuni-jsframework.jsunincomponents.ttfweex-polyfill.jsweexUniJs.js
+__uniappes6.js
+PandoraApi.bundle
+uni-jsframework-vue3.js
+uni-jsframework.js
+unincomponents.ttf
+weex-polyfill.js
+weexUniJs.js
 
 ```
 

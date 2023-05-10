@@ -71,6 +71,7 @@ android {
         //noCompress 'foo', 'bar'
         ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
     }
+
 }
 
 flutter {
@@ -79,4 +80,7 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //导入SDK相关依赖jar、aar
+    implementation fileTree(include: ['*.aar'], dir:  rootDir.absolutePath + '../../../android/libs')
 }
