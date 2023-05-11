@@ -82,5 +82,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     //导入SDK相关依赖jar、aar
-    implementation fileTree(include: ['*.aar'], dir:  rootDir.absolutePath + '../../../android/libs')
+    implementation fileTree(include: ['*.aar'], dir:  project(':flutter_uniapp').file('libs'))
+
+//    implementation fileTree(include: ['*.aar'], dir:  rootDir.absolutePath + '../../../android/libs')
 }

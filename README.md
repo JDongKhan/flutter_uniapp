@@ -43,7 +43,7 @@ android: {
 }
 
 依赖
-implementation fileTree(include: ['*.aar'], dir:  rootDir.absolutePath + '../../../android/libs')
+implementation fileTree(include: ['*.aar'], dir:  project(':flutter_uniapp').file('libs'))
     
 ```
 
